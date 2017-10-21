@@ -12,6 +12,7 @@ import {MoneyComponent} from './Stage1/money/money.component';
 import {InfoComponent} from './Stage1/info/info.component';
 import {GroupEndComponent} from './Stage1/group-end/group-end.component';
 import {ChatComponent} from './Stage1/chat/chat.component';
+import {routing} from './app.routing';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {ChatComponent} from './Stage1/chat/chat.component';
     GroupEndComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [
     FirebaseService,
