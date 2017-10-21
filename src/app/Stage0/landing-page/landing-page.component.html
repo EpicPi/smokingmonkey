@@ -4,13 +4,15 @@ Groups:
 <br>
 <ul>
   <li *ngFor="let group of user.groups">
-    {{group.name}}
+    <button (click)="selectGroup(group)">
+      {{group.name}}
+    </button>
   </li>
 </ul>
 <br>
-<button>
+<button (click)="makeGroup()">
   make group
 </button>
-<button>
+<button (click)="joinGroup()">
   join group
 </button>
