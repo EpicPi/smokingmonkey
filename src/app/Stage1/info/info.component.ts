@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Group} from '../../Services/group';
+import {GroupService} from '../../Services/group.service';
 
 @Component({
   selector: 'app-info',
@@ -7,7 +7,8 @@ import {Group} from '../../Services/group';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent implements OnInit {
-  constructor() { }
+  constructor(private groupService: GroupService) {
+  }
 
   ngOnInit() {
   }
