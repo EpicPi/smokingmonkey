@@ -1,5 +1,9 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import {Router} from '@angular/router';
+import {UserService} from '../../Services/user.service';
+import {Group} from '../../Models/group';
+import {GroupService} from '../../Services/group.service';
 
 @Component({
   selector: 'app-group-create',
@@ -7,25 +11,24 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./group-create.component.css']
 })
 export class GroupCreateComponent implements OnInit {
+  constructor(private router: Router, private userService: UserService, private groupService: GroupService){}
   @ViewChild('f') signupForm: NgForm;
   defaultQuestion = 'Daily';
-  user = {
-    name: '',
-    fre: '',
-    duration: ''
-  };
-  submitted = false;
+
   ngOnInit() {
   }
 
   onSubmit(form: NgForm) {
-    this.submitted = true;
-    this.user.name = this.signupForm.value.userData.name;
-    this.user.fre = this.signupForm.value.userData.fre;
-    this.user.duration = this.signupForm.value.userData.duration;
-    console.log(form);
 
-    this.signupForm.reset();
+    let name = this.signupForm.value.userData.name;
+    let fre = this.signupForm.value.userData.fre;
+    let duration = this.signupForm.value.userData.duration;
+    let money = this.signupForm.value.userData.money;
 
+    const group = new Group(name, fre, duration, money);
+    this.groupService.addGroup(group);
+    this.groupService.addUser(this.userService.user, group);
+
+    this.router.navigateByUrl('/landing');
   }
 }

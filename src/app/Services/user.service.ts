@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
-import {User} from './user';
-import {Group} from './group';
+import {User} from '../Models/user';
+import {Group} from '../Models/group';
 
 @Injectable()
 export class UserService {
@@ -9,11 +9,15 @@ export class UserService {
   }
 
 
-
   public user: User;
 
-  join(id: string) {
-    let g = new Group(id);
-    this.user.groups.push(g);
+  join(group: Group) {
+    // let g = new Group(id);
+    // this.user.groups.push(g);
+  }
+
+  addGroup(group: Group) {
+    this.user.groups.push(group);
+    //firebase stuff
   }
 }

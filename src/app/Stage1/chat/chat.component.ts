@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Group} from '../../Services/group';
+import {Group} from '../../Models/group';
 
 @Component({
   selector: 'app-chat',

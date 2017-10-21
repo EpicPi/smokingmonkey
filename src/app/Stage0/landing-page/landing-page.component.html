@@ -2,7 +2,7 @@ User: {{user.username}}
 <br>
 Groups:
 <br>
-<ul>
+<ul *ngIf="user.groups">
   <li *ngFor="let group of user.groups">
     <button (click)="selectGroup(group)">
       {{group.name}}

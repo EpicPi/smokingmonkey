@@ -10,14 +10,14 @@ import {GroupService} from '../../Services/group.service';
 })
 export class GroupJoinComponent implements OnInit {
   id: string;
-  constructor(private router: Router, private userService: UserService) {
+  constructor(private router: Router, private userService: UserService, private groupService: GroupService) {
   }
 
   ngOnInit() {
   }
 
   join(id: string) {
-    this.userService.join(id);
+    this.userService.join(this.groupService.getGroupByName(id));
     this.router.navigateByUrl('/landing');
   }
 }

@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, FormsModule, Validators} from '@angular/forms';
-import {User} from '../../Services/user';
+import {User} from '../../Models/user';
 import {Router} from '@angular/router';
 import {UserService} from '../../Services/user.service';
-import {Group} from '../../Services/group';
+import {Group} from '../../Models/group';
+import {UserStat} from '../../Models/user.stat';
 
 @Component({
   selector: 'app-login',
@@ -11,11 +12,9 @@ import {Group} from '../../Services/group';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  groups = [new Group('hi'), new Group('bye')];
   joe = new User(
     'joe',
     '123',
-    this.groups
   );
   myForm: FormGroup;
 
