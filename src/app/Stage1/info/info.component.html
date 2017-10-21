@@ -1,3 +1,8 @@
-<p>
-  info works!
-</p>
+<div *ngFor="let userStat of userStats">
+  name{{userStat.user.username}}
+  <br>
+  money{{userStat.money}}
+  <br>
+  penalties{{userStat.penalties}}
+  <hr>
+</div>

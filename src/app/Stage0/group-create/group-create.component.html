@@ -37,21 +37,22 @@
               name="duration"
               required>
           </div>
+          <div class="form-group">
+            <label for="money">Money in Dollars</label>
+            <input
+              type="number"
+              class="form-control"
+              id="money"
+              ngModel
+              name="duration"
+              required>
+          </div>
         </div>
         <button
           class="btn btn-primary"
           type="submit"
-          >Submit</button>
+        >Submit
+        </button>
       </form>
     </div>
-</div>
-  <hr>
-  <div class="row" *ngIf="submitted">
-    <div class="col-xs-12">
-      <h3>Your Data</h3>
-      <p>Name: {{ user.name }}</p>
-      <p>Freq: {{ user.fre }}</p>
-      <p>Duration: {{ user.duration }}</p>
-    </div>
   </div>
-</div>
