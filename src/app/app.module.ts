@@ -2,15 +2,37 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './Stage0/login/login.component';
+import { LandingPageComponent } from './Stage0/landing-page/landing-page.component';
+import {FirebaseService} from './Services/firebase.service';
+import {LoginService} from './Services/login.service';
+import {GroupComponent } from './Stage1/group/group.component';
+import {GroupCreateComponent} from './Stage0/group-create/group-create.component';
+import {MoneyComponent} from './Stage1/money/money.component';
+import {InfoComponent} from './Stage1/info/info.component';
+import {GroupEndComponent} from './Stage1/group-end/group-end.component';
+import {ChatComponent} from './Stage1/chat/chat.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    LandingPageComponent,
+    GroupComponent,
+    ChatComponent,
+    GroupCreateComponent,
+    MoneyComponent,
+    InfoComponent,
+    GroupEndComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    FirebaseService,
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
