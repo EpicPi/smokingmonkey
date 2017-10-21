@@ -1,7 +1,16 @@
-header .navbar{
-	padding-left: 15px;
+#header{
+	background-color: #778899;
+	background-image: linear-gradient(to left, white, rgba(00,00,00,1));
+	border-radius: 0;
+	border: 0;
 }
 
-header .navbar{
-	padding-left: 15px;
+.grouptabs{
+	border-radius: 0;
+	border: 0;
+	padding: 0
+}
+
+.grouptabs.active{
+	color:orange;
 }

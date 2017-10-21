@@ -1,6 +1,13 @@
+<nav id="header" class = "navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <a class= "navbar-brand" href="#" style="color:white"><img src="nosmoking.png" alt = "QuittingUnited"></a>
+	    <button type="button" class="btn btn-primary nav navbar-nav navbar-right" id="testname">{{user.username}}</button>
+    </div>
+</nav>
+
 <header>
-	<nav class="navbar navbar-default" role="navigation">
-  		<div class="container">
+	<nav class="navbar navbar-default navbar-left row" role="navigation">
+  		<div class="container-fluid">
 	    	<ul class="nav nav-tabs navbar-left">
 		      <li routerLinkActive="active"><a [routerLink]="['info']">Info</a></li>
 		      <li routerLinkActive="active"><a [routerLink]="['money']">Money</a></li>
