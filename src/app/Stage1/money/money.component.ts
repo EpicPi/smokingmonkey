@@ -13,4 +13,5 @@ export class MoneyComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }
