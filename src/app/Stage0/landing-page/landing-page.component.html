@@ -1,18 +1,25 @@
-User: {{user.username}}
-<br>
-Groups:
-<br>
-<ul *ngIf="user.groups">
-  <li *ngFor="let group of user.groups">
-    <button (click)="selectGroup(group)">
-      {{group.name}}
-    </button>
-  </li>
-</ul>
-<br>
-<button (click)="makeGroup()">
-  make group
-</button>
-<button (click)="joinGroup()">
-  join group
-</button>
+<div class="container-fluid">
+	User: {{user.username}}
+	<br>
+	Groups:
+	<br>
+	<ul *ngIf="user.groups">
+	  <li *ngFor="let group of user.groups">
+	    <button class="btn btn-primary" (click)="selectGroup(group)">
+	      {{group.name}}
+	    </button>
+	  </li>
+	</ul>
+	<br>
+	<nav class="nav navbar-default">
+		<div class="container-fluid">
+			<button class="btn btn-primary" (click)="makeGroup()">
+		  Make Group
+		</button>
+		<button class="btn btn-primary" (click)="joinGroup()">
+		  Join Group
+		</button>
+		</div>
+	</nav>
+	
+</div>

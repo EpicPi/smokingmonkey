@@ -1,11 +1,13 @@
 <header>
-  <nav>
-    <ul class="nav nav-tabs">
-      <li routerLinkActive="active"><a [routerLink]="['info']">Info</a></li>
-      <li routerLinkActive="active"><a [routerLink]="['money']">Money</a></li>
-      <li routerLinkActive="active"><a [routerLink]="['chat']">Chat</a></li>
-    </ul>
-  </nav>
+	<nav class="navbar navbar-default" role="navigation">
+  		<div class="container">
+	    	<ul class="nav nav-tabs navbar-left">
+		      <li routerLinkActive="active"><a [routerLink]="['info']">Info</a></li>
+		      <li routerLinkActive="active"><a [routerLink]="['money']">Money</a></li>
+		      <li routerLinkActive="active"><a [routerLink]="['chat']">Chat</a></li>
+	    	</ul>
+		</div>
+	</nav>
 </header>
 <div>
   <router-outlet></router-outlet>
