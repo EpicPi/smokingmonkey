@@ -4,5 +4,10 @@ import { User } from './user';
 export class UserService {
 
   constructor() { }
-  private billy: User = new User('Billy', 'sfa');
+  private users: User[] = [
+    new User('Billy', 'sfa')
+  ];
+  returnUsers() {
+    return this.users;
+  }
 }
