@@ -5,4 +5,6 @@ export class UserService {
 
   constructor() { }
   private billy: User = new User('Billy', 'sfa');
+
+  public user: User;
 }
