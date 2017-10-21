@@ -1,0 +1,20 @@
+#login {
+	padding: 5px;
+	border: 3px solid black;
+}
+
+#login div {
+	width: 100%;
+}
+
+p{
+	text-align: center;
+	font-size: 3em	
+}
+#header1{
+	background-color: #778899;
+	background-image: linear-gradient(to left, white, rgba(00,00,00,1));
+	border-radius: 0;
+	border: 0;
+;
+}

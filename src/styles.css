@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
 body{
-	background-repeat: no-repeat;
-	height: 1000px; 
-	background: linear-gradient(to bottom, white, #6622CC) no-repeat;
+	font-family: "Noto sans", sans-serif;
+	font-size: 2em;
+	color: white;
+	height: fill; 
+	opacity: .9;
+	background-color: rgba(00,00,00,.85);
+	background-image: linear-gradient(to left, #BBBBBB, rgba(00,00,00,.4)) ;
+}
+
+#header{
+	border:0;
+	border-radius: 0;
+}
+
+#testname{
+	color: white;
 }
