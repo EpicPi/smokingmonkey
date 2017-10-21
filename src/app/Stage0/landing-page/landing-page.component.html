@@ -1,3 +1,18 @@
-<p>
-  landing-page works!
-</p>
+User: {{user.username}}
+<br>
+Groups:
+<br>
+<ul>
+  <li *ngFor="let group of user.groups">
+    <button (click)="selectGroup(group)">
+      {{group.name}}
+    </button>
+  </li>
+</ul>
+<br>
+<button (click)="makeGroup()">
+  make group
+</button>
+<button (click)="joinGroup()">
+  join group
+</button>
