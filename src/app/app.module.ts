@@ -14,7 +14,8 @@ import {GroupEndComponent} from './Stage1/group-end/group-end.component';
 import {ChatComponent} from './Stage1/chat/chat.component';
 import {routing} from './app.routing';
 import { GroupJoinComponent } from './Stage0/group-join/group-join.component';
-import {HttpModule} from "@angular/http";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
 
 @NgModule({
@@ -32,6 +33,8 @@ import {HttpModule} from "@angular/http";
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     routing,
     HttpModule
   ],
