@@ -5,13 +5,14 @@ import {UserStat} from '../Models/user.stat';
 import {UserService} from './user.service';
 
 @Injectable()
-export class GroupService{
+export class GroupService {
 
   public group: Group;
   public groups: Group[];
 
   constructor(private userService: UserService) {
     this.groups = new Array<Group>();
+    this.groups.push(new Group('s', 1, 1, 1));
     // firbase dat ma boi
   }
 
@@ -27,6 +28,7 @@ export class GroupService{
         return group;
       }
     }
+    return null;
     // firebase this up
   }
 
