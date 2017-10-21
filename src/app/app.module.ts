@@ -15,6 +15,7 @@ import {ChatComponent} from './Stage1/chat/chat.component';
 import {routing} from './app.routing';
 import { GroupJoinComponent } from './Stage0/group-join/group-join.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [
     FirebaseService,
