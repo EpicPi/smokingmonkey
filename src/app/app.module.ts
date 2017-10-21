@@ -13,6 +13,7 @@ import {InfoComponent} from './Stage1/info/info.component';
 import {GroupEndComponent} from './Stage1/group-end/group-end.component';
 import {ChatComponent} from './Stage1/chat/chat.component';
 import {routing} from './app.routing';
+import { GroupJoinComponent } from './Stage0/group-join/group-join.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {routing} from './app.routing';
     GroupCreateComponent,
     MoneyComponent,
     InfoComponent,
-    GroupEndComponent
+    GroupEndComponent,
+    GroupJoinComponent
   ],
   imports: [
     BrowserModule,
