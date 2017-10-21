@@ -4,10 +4,9 @@ body{
 	font-family: "Noto sans", sans-serif;
 	font-size: 2em;
 	color: white;
-	height: fill; 
+	height: fill;
 	opacity: .9;
 	background-color: rgba(00,00,00,.85);
-	background-image: linear-gradient(to left, #BBBBBB, rgba(00,00,00,.4)) ;
 }
 
 #header{

@@ -9,7 +9,9 @@ div .user{
 div #makegroup{
 	text-align: right;
 }
-
+ul{
+  list-style-type: none;
+}
 @media only screen
 and (max-width: 999px) {
   div .user {
