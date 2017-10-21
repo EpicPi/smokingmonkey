@@ -24,8 +24,10 @@ and (max-width: 999px) {
 }
 
 #header{
-	border:0;
+	background-color: #778899;
+	background-image: linear-gradient(to left, white, rgba(00,00,00,1));
 	border-radius: 0;
+	border: 0;
 }
 
 #header div{
@@ -33,7 +35,7 @@ and (max-width: 999px) {
 }
 
 #testname{
-	height: 100%;
+	padding: 30px;
 }
 
 .btn-lg{
