@@ -8,10 +8,10 @@ export class FirebaseService {
 
   constructor(private http: Http, private userService: UserService, private groupService: GroupService) { }
   storeUsers() {
-  this.http.put('https://smokingmoney-45496.firebaseio.com/users.json', this.userService.returnUsers());
+  // this.http.put('https://smokingmoney-45496.firebaseio.com/users.json', this.userService.returnUsers());
   }
   storeGroups() {
-    this.http.put('https://smokingmoney-45496.firebaseio.com/groups.json', this.groupService.returnGroups());
+    // this.http.put('https://smokingmoney-45496.firebaseio.com/groups.json', this.groupService.returnGroups());
   }
 
 }

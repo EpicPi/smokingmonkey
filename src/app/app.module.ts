@@ -16,8 +16,8 @@ import {routing} from './app.routing';
 import { GroupJoinComponent } from './Stage0/group-join/group-join.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-import {UserService} from "./Services/user.service";
-import {GroupService} from "./Services/group.service";
+import {UserService} from './Services/user.service';
+import {GroupService} from './Services/group.service';
 
 
 @NgModule({

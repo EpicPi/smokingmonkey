@@ -1,13 +1,17 @@
-import { Injectable } from '@angular/core';
-import { User } from './user';
+import {Injectable} from '@angular/core';
+import {User} from './user';
+import {Group} from './group';
+
 @Injectable()
 export class UserService {
 
-  constructor() { }
-  private users: User[] = [
-    new User('Billy', 'sfa')
-  ];
-  returnUsers() {
-    return this.users;
+  constructor() {
+  }
+
+  public user: User;
+
+  join(id: string) {
+    let g = new Group(id);
+    this.user.groups.push(g);
   }
 }
