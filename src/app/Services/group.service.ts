@@ -11,8 +11,13 @@ export class GroupService {
   public groups: Group[];
 
   constructor(private userService: UserService) {
-    this.groups = new Array<Group>();
-    this.groups.push(new Group('s', 1, 1, 1));
+    // this.groups = new Array<Group>();
+    const group = new Group('s', 1, 1, 1);
+    const usr = new User('jo2', 'lol');
+    group.userStats.push(new UserStat(usr, 0, group.money));
+    usr.groups.push(group);
+    this.groups = [group];
+
     // firbase dat ma boi
   }
 
