@@ -8,6 +8,8 @@ export class UserService {
   constructor() {
   }
 
+
+
   public user: User;
 
   join(id: string) {

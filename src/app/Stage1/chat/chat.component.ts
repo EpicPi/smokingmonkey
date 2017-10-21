@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Group} from '../../Services/group';
 
 @Component({
   selector: 'app-chat',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements OnInit {
+  @Input()
+  group: Group;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
