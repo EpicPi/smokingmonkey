@@ -1,27 +1,14 @@
-# Smokingmoney
+Inspiration:
+Sometimes, people just need a little incentive in order to start getting them to their work. However, sometimes it can be hard to set up these incentives between friends. That's why Game Your Grades is a simple app where you login, join a group, and start aiming for that money.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
+What it does:
+Game Your Grades is a simple app where you login and can either join an existing group or make a new one. After everyone gets inside the group, money is automatically pooled based on the parameters of the group. Afterwards, people get a proportinately higher amount of money based on the rankings of the averages of their grades.
 
-## Development server
+How we built it:
+Game Your Grades was built using Firebase as the backend and Angular on the frontend. The UI was created using a combination of elements from Bootstrap and Angular Material.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Challenges we ran into:
+We encountered many errors while attempting to use GitHub between several people. We also encountered problems getting http requests with the Firebase backend. It also took several hours to figure out how to deploy to GitHub. We also had when errors when we decided to include features from Angular Material when already utlizing Bootstrap.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+What we learned:
+Being freshman, our team was inexperienced. However, after trial and error, we started figuring out what works, what doesn't, and how to fix what doesn't. We learned how to get http requests, use a backend, and make a web app. We also learned how to design a webpage using Bootstrap and Angular Material.
