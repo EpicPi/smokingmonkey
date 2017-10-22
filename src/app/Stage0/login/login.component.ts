@@ -13,7 +13,7 @@ import {UserStat} from '../../Models/user.stat';
 })
 export class LoginComponent implements OnInit {
   joe = new User(
-    'joe',
+    'George Burdell',
     '123',
   );
   myForm: FormGroup;
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
       userName: new FormControl(null, Validators.required),
       password: new FormControl(null, Validators.required)
     });
-    this.myForm.get('userName').setValue('joe');
+    this.myForm.get('userName').setValue('George Burdell');
     this.myForm.get('password').setValue('123');
   }
 

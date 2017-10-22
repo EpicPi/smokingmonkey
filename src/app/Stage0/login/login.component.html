@@ -1,4 +1,20 @@
-<div class="col-md-8 col-md-offset-2">
+<nav id="header1" class = "navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+    <a class= "navbar-brand" href="#" style="color:white"><img src="nosmoking.jpg" alt = "QuittingUnited"></a>
+    </div>
+</nav>
+<div id="page">
+<div class="jumbotron col-lg-7 col-md-6 col-sm-5 col-xs-4">
+  <div class="container">
+    <h1 class="display-3">Quit Smoking Now!</h1>
+    <p class="lead">Bet With Your Friends Who Can Last The Longest</p>
+  </div>
+</div>
+
+
+
+
+<div id="login" class="col-md-offset-1 col-md-3 container">
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
     <label for="userName">UserName</label>
@@ -23,4 +39,5 @@
     type="submit"
     [disabled]="!myForm.valid">Submit</button>
   </form>
+</div>
 </div>

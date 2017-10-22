@@ -1,0 +1,52 @@
+div{
+	font-size: 1.3em;
+}
+
+div .user{
+	text-align: right;
+}
+
+div #makegroup{
+	text-align: right;
+}
+ul{
+  list-style-type: none;
+}
+@media only screen
+and (max-width: 999px) {
+  div .user {
+    text-align: left;
+  }
+
+  div #makegroup{
+  	text-align: left;
+  }
+}
+
+#header{
+	background-color: #778899;
+	background-image: linear-gradient(to left, white, rgba(00,00,00,1));
+	border-radius: 0;
+	border: 0;
+}
+
+#header div{
+	font-size: 1em;
+}
+
+#testname{
+	padding: 30px;
+}
+
+.btn-lg{
+	font-size: .3em;
+	padding: 10%;
+}
+
+#specialbutton{
+	padding:1%;
+}
+
+/*div .button{
+	padding: 1%;
+}*/

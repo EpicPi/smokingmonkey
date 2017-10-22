@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+body{
+	font-family: "Noto sans", sans-serif;
+	font-size: 2em;
+	color: white;
+	height: fill;
+	opacity: .9;
+	background-color: rgba(00,00,00,.85);
+}
+
+#header{
+	border:0;
+	border-radius: 0;
+}
+
+#testname{
+	color: white;
+}

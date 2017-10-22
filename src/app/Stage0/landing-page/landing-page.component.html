@@ -1,18 +1,45 @@
-User: {{user.username}}
-<br>
-Groups:
-<br>
-<ul *ngIf="groups">
-  <li *ngFor="let group of groups">
-    <button (click)="selectGroup(group)">
-      {{group.name}}
-    </button>
-  </li>
-</ul>
-<br>
-<button (click)="makeGroup()">
-  make group
-</button>
-<button (click)="joinGroup()">
-  join group
-</button>
+<div>
+	<nav id="header" class = "navbar navbar-default navbar-static-top">
+	    <div class="container-fluid">
+	        <a class= "navbar-brand" href="#" style="color:white"><img src="nosmoking.png" alt = "QuittingUnited"></a>
+		    	<button type="button" id="testname" class="btn btn-primary nav navbar-nav navbar-right">{{user.username}}</button>
+	    </div>
+	</nav>
+
+
+
+	<div id="landing-page" class="container-fluid">
+		<div class="container-fluid row info">
+			<div class="col-md-offset-5">
+				Groups:
+				<br>
+			</div>
+		</div> <!-- User and group info -->
+
+		<div class="col-md-offset-5 container-fluid">
+			<ul *ngIf="groups">
+		  	<li *ngFor="let group of groups">
+		    	<button class="btn btn-primary btn-lg" id="specialbutton" (click)="selectGroup(group)">
+		      	{{group.name}}
+		    	</button>
+		  	</li>
+			</ul>
+			<br>
+		</div>
+
+		<div class="container-fluid button">
+			<div class="row">
+				<div class="col-md-2 col-md-offset-4" id="makegroup">
+					<button class="btn btn-primary btn-lg" (click)="makeGroup()">
+				  	Make Group
+					</button>
+				</div>
+				<div class="col-md-2 button clear" >
+					<button class="btn btn-primary btn-lg" (click)="joinGroup()">
+				  	Join Group
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
