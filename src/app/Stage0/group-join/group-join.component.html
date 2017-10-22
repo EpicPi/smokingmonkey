@@ -5,12 +5,13 @@
 </nav>
 <div class="container">
   <div class="row">
-    <div class="col-xs-6">
-      Join ID <input type="text" id="inp"#groupID placeholder="id">
-
-      <button class="btn btn-primary"(click)="join(groupID.value)">
-        Join
-      </button>
+    <div class="col-xs-8">
+      Join Group:
+      <mat-form-field>
+      <input matInput placeholder="Group Name" #groupID>
+      <mat-error>This field is required</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="join(groupID.value)">Join</button>
     </div>
   </div>
 </div>

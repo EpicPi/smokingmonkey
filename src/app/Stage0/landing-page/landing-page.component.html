@@ -24,22 +24,8 @@
     </div>
 
     <div class="button-row">
-      <button mat-raised-button color="primary">Primary</button>
-    </div>
-
-    <div class="container button">
-      <div class="row">
-        <div class="flo col-md-1 col-lg-1 col-xs-3 col-sm-2 col-lg-offset-2 col-sm-offset-2 col-md-offset-2 col-xs-offset-2">
-          <button class="btn btn-primary btn-lg" (click)="makeGroup()">
-            Make Group
-          </button>
-        </div>
-        <div class="flo col-md-1 col-lg-1 col-xs-3 col-sm-2 col-lg-offset-2 col-sm-offset-2 col-md-offset-2 col-xs-offset-2" >
-          <button class="btn btn-primary btn-lg" (click)="joinGroup()">
-            Join Group
-          </button>
-        </div>
-      </div>
+      <button mat-raised-button color="primary" (click)="makeGroup()">Make Group</button>
+      <button mat-raised-button color="primary" (click)="joinGroup()">Join Group</button>
     </div>
   </div>
 </div>
