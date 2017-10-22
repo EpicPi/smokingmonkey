@@ -65,13 +65,21 @@ ul{
   background-color: #4da6ff;
   border-color: lightcoral;
 }
-mat-card {
-  padding: 2%;
+#group2 {
+  margin-top: 2%;
+}
+#group {
+  margin-top: 4%;
 }
 .list-group-item{
   margin-bottom: 1%;
 }
-
+.row .text-left{
+  text-align: left ;
+}
+.row .text-right{
+  text-align: right;
+}
 #testname{
   float: right;
   height: 50px;
