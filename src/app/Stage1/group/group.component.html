@@ -1,23 +1,22 @@
-<nav id="header" class = "navbar navbar-default navbar-static-top">
-  <div class="container-fluid">
-    <a class= "navbar-brand" href="#" style="color:white">QuittingUnited</a>
-  </div>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+     [routerLink]="['info']"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    Info
+  </a>
+  <a mat-tab-link
+     [routerLink]="['money']"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    Money
+  </a>
+  <a mat-tab-link
+     [routerLink]="['chat']"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    Chat
+  </a>
 </nav>
+<router-outlet></router-outlet>
 
-<header>
-	<div class ="container">
-		<nav class="navbar navbar-default navbar-left" role="navigation">
-	  		<div class="container-fluid">
-		    	<ul class="nav nav-tabs navbar-left">
-			      <li routerLinkActive="active"><a [routerLink]="['info']">Info</a></li>
-			      <li routerLinkActive="active"><a [routerLink]="['money']">Money</a></li>
-			      <li routerLinkActive="active"><a [routerLink]="['chat']">Chat</a></li>
-		    	</ul>
-			</div>
-		</nav>
-	</div>
-
-</header>
-<div>
-  <router-outlet></router-outlet>
-</div>
