@@ -17,8 +17,8 @@
 		</div> <!-- User and group info -->
 
 		<div class="container card col-md-5 col-lg-5 col-xs-5 col-md-5">
-			<ul *ngIf="user.groups" class="list-group list-group-flush cardh">
-		  	<li *ngFor="let group of user.groups" class="list-group-item cardh" id="cardh">
+			<ul *ngIf="groups" class="list-group list-group-flush cardh">
+		  	<li *ngFor="let group of groups" class="list-group-item cardh" id="cardh">
 		    	<button class="btn btn-primary cardh " id="specialbutton" (click)="selectGroup(group)">
 		      	{{group.name}}
 		    	</button>
