@@ -1,12 +1,5 @@
-<div>
-  <nav id="header" class = "navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-      <a class= "navbar-brand" href=# style="color:white">QuittingUnited</a>
-      <button type="button" id="testname" class="btn btn-primary navbar-btn navbar-right">{{user.username}}</button>
-    </div>
-  </nav>
-  <div id="landing-page" class="container-fluid">
-    <div class="container info">
+<div id="landing-page" class="container-fluid">
+  <div class="container info">
     <div class="container card col-md-5 col-lg-5 col-xs-5 col-sm-5">
       <ul *ngIf="groups" class="list-group list-group-flush">
         <li class="list-group-item">
@@ -28,7 +21,7 @@
 
     <div class="button-row">
       <button class="bigbtn" mat-raised-button color="primary" (click)="makeGroup()">Make Group</button>
-      <button class="bigbtn"mat-raised-button color="primary" (click)="joinGroup()">Join Group</button>
+      <button class="bigbtn" mat-raised-button color="primary" (click)="joinGroup()">Join Group</button>
     </div>
   </div>
 </div>

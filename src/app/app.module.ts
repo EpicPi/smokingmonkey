@@ -52,6 +52,7 @@ import {
   MatTooltipModule,
   MatStepperModule,
 } from '@angular/material';
+import {NavbarComponent} from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import {
     InfoComponent,
     GroupEndComponent,
     GroupJoinComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
