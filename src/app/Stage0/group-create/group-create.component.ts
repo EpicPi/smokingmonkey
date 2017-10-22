@@ -19,7 +19,7 @@ export class GroupCreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(form: NgForm) {
+  onSubmit() {
     console.log('doing it');
     let name = this.signupForm.value.userData.name;
     let fre = this.signupForm.value.userData.fre;
