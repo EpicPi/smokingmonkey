@@ -18,24 +18,23 @@ export class LandingPageComponent implements OnInit {
   constructor(private router: Router, private userService: UserService, private groupService: GroupService, private fb: FirebaseService) {
   }
 
-  // constructor(private userService: UserService, private router: Router){}
-
   ngOnInit() {
     this.user = this.userService.user;
+    this.groups = new Array<Group>();
     this.fb.getGroups().subscribe(res => {
       const groups = this.groupService.getGroups(res);
       for (let group of groups) {
+        for (let us of group.userStats) {
+          if (us.user.username === this.user.username) {
+            this.groups.push(group);
+          }
+        }
       }
-      for (let us of group)
-        this.groups.push(group);
     });
-    this.groups = this.groupService.getGroupsbyUser(this.user);
   }
 
   selectGroup(group: Group) {
     this.groupService.group = group;
-    this.fb.addGroup(group).subscribe();
-    this.fb.getGroups().subscribe(console.log);
     this.router.navigateByUrl('/group');
   }
 

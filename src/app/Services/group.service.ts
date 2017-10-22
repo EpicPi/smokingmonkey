@@ -35,24 +35,9 @@ export class GroupService {
     return groups;
   }
 
-  getGroupsbyUser(user: User) {
-    const groups = new Array<Group>();
-    for (let group of this.groups) {
-      for (let usrStats of group.userStats) {
-        if (usrStats.user === user) {
-          groups.push(group);
-          break;
-        }
-      }
-    }
-    console.log(groups);
-    return groups;
-  }
-
   setGroup(group: Group) {
     this.fb.setGroup(group).subscribe(console.log);
   }
-
 
   addGroup(group: Group) {
     this.fb.addGroup(group).subscribe(result => {
