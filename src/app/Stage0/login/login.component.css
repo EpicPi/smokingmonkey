@@ -1,15 +1,14 @@
 .jumbotron {
-  background: #3f51b5;
   margin-top: 5%;
   margin-left: 5%;
   text-align: center;
 }
-
 mat-form-field{
   line-height: 1;
 }
 button{
   float: right;
+  margin-right: 5%;
 }
 #login{
   margin-top: 5%;
@@ -18,4 +17,7 @@ button{
   background: #3f51b5;
   overflow-y: auto;
   display: block;
+}
+.c1{
+  margin-left: 20%;
 }
