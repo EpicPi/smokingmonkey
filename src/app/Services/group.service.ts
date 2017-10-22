@@ -3,43 +3,47 @@ import {Group} from '../Models/group';
 import {User} from '../Models/user';
 import {UserStat} from '../Models/user.stat';
 import {UserService} from './user.service';
+import {FirebaseService} from './firebase.service';
+import {forEach} from '@angular/router/src/utils/collection';
 
 @Injectable()
 export class GroupService {
 
   public group: Group;
   public groups: Group[];
+  public changed: boolean;
 
-  constructor(private userService: UserService) {
-    // this.groups = new Array<Group>();
-    const group = new Group('s', 1, 1, 1);
-    const usr = new User('jo2', 'lol');
-    group.userStats.push(new UserStat(usr, 0, group.money));
-    usr.groups.push(group);
-    this.groups = [group];
-
-    // firbase dat ma boi
+  constructor(private fb: FirebaseService) {
+    this.changed = false;
   }
 
   addUser(user: User, group: Group) {
     group.userStats.push(new UserStat(user, 0, group.money));
-    this.userService.addGroup(group);
-    // firebase that
+    this.setGroup(group);
   }
 
-  getGroupByName(name: string) {
-    for (let group of this.groups) {
-      if (group.name === name) {
-        return group;
-      }
+  getGroups(result: any) {
+    const groups = new Array<Group>();
+    for (let k in result) {
+      groups.push(result[k]);
     }
-    return null;
-    // firebase this up
+    return groups;
+  }
+
+  setGroup(group: Group) {
+    this.fb.setGroup(group).subscribe(result => {
+      console.log(result);
+      this.changed = true;
+    });
   }
 
   addGroup(group: Group) {
-    this.groups.push(group);
-    // firebase my friend
+    this.fb.addGroup(group).subscribe(result => {
+      group.id = result.json()['name'];
+      this.setGroup(group);
+      this.changed = true;
+    });
+
   }
 
 }
