@@ -105,3 +105,17 @@ ul{
 /*div .button{
 	padding: 1%;
 }*/
+.right{
+  float: right;
+}
+.info{
+  text-align: center;
+  margin-top: 5%;
+}
+.info2{
+  margin-top: 2%;
+}
+
+.info3{
+  margin-top: 1%;
+}

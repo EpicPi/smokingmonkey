@@ -1,34 +1,21 @@
 <div id="landing-page" class="container-fluid">
-  <div class="row info">
-    <div class="card col-md-10 col-lg-10 col-xs-10 col-sm-10 col-xs-offset-1" id="group">
-      <mat-card>
-        <button class="btn btn-primary specialbutton" id="cardh">
-          Groups
-        </button>
-      </mat-card>
-    </div>
+  <mat-card class="info">
+    Groups
+  </mat-card>
+  <div *ngIf="groups" class="info2">
+    <mat-card class="info3" *ngFor="let group of groups" (click)="selectGroup(group)">
+      <mat-card-title>
+          <span>{{group.name}} </span>
+          <span class="right">dummy data</span>
+      </mat-card-title>
+    </mat-card>
   </div>
-  <div class="row info">
-    <div class="card col-xs-offset-1 col-xs-10" id="group2">
-      <ul *ngIf="groups" class="list-group list-group-flush">
-        <mat-card>
-          <li *ngFor="let group of groups" class="list-group-item">
-            <button class="btn btn-primary cardh specialbutton row" (click)="selectGroup(group)">
-              <span class="text-left col-xs-offset-1 col-xs-3">{{group.name}}
-              </span> <span class="text-right col-xs-offset-4 col-xs-3">dummy data</span>
-            </button>
-          </li>
-        </mat-card>
-      </ul>
-    </div>
-  </div>
+
   <hr>
-  <div class="row">
-      <div class="col-xs-offset-2 col-xs-3">
-        <button class="bigbtn" mat-raised-button color="primary" (click)="makeGroup()">Make Group</button>
-      </div>
-      <div class="col-xs-offset-3 col-xs-3">
-        <button class="bigbtn" mat-raised-button color="primary" (click)="joinGroup()">Join Group</button>
-      </div>
+  <div class="text-center">
+    <button mat-raised-button color="primary" (click)="makeGroup()">Make Group</button>
+
+    <button mat-raised-button color="primary" (click)="joinGroup()">Join Group</button>
   </div>
+
 </div>
