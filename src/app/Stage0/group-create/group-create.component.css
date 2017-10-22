@@ -1,11 +1,9 @@
-#header{
-	background-color: #778899;
-	background-image: linear-gradient(to left, white, rgba(00,00,00,1));
-	border-radius: 0;
-	border: 0;
+.right{
+  float: right;
 }
-mat-card {
-  padding-top: .2%;
-  padding-bottom: .2%;
-  border-color: gray;
+mat-card{
+  margin-right: 35%;
+  margin-left: 35%;
+  text-align: center;
+  margin-top: 5%;
 }

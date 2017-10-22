@@ -1,91 +1,23 @@
-<div class="container">
-  <div class="row">
-      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-        <div class = "container">
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-8 col-xs-offset-2">
-              <div>
-                <mat-card>
-                  <mat-form-field>
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input
-                        matInput
-                        type="text"
-                        id="name"
-                        class="form-control"
-                        ngModel
-                        name="name"
-                        required>
-                    </div>
-                  </mat-form-field>
-                </mat-card>
-              </div>
-              <div>
-                <mat-card>
-                  <mat-form-field>
-                    <div class="form-group">
-                      <label for="fre">Checking Frequency</label>
-                      <mat-select
-                        id="fre"
-                        class="form-control"
-                        [ngModel]="defaultQuestion"
-                        name="fre">
-                        <mat-option value="Daily">Daily</mat-option>
-                        <mat-option value="Weekly">Weekly</mat-option>
-                      </mat-select>
-                    </div>
-                  </mat-form-field>
-                </mat-card>
-              </div>
-              <div>
-                <mat-card>
-                  <mat-form-field>
-                    <div class="form-group">
-                      <label for="duration">Duration in Days</label>
-                      <input
-                        matInput
-                        type="number"
-                        class="form-control"
-                        id="duration"
-                        ngModel
-                        name="duration"
-                        required>
-                    </div>
-                  </mat-form-field>
-
-                </mat-card>
-              </div>
-              <div>
-                <mat-card>
-                  <mat-form-field>
-                    <div class="form-group">
-                      <label for="money">Money in Dollars</label>
-                      <input
-                        matInput
-                        type="number"
-                        class="form-control"
-                        id="money"
-                        ngModel
-                        name="duration"
-                        required>
-                    </div>
-                  </mat-form-field>
-                </mat-card>
-              </div>
-              <div>
-                <mat-card>
-                  <button
-                    mat-raised-button color="primary"
-                    type="submit"
-                  >Submit
-                  </button>
-                </mat-card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+<mat-card>
+  <mat-card-title>
+    Create a New Group
+  </mat-card-title>
+  <mat-form-field>
+    <input matInput [(ngModel)]='name' placeholder="Name" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      [(ngModel)]="money"
+      placeholder="Money"
+      required>
+  </mat-form-field>
+  <br>
+  <br>
+  <button (click)="submit()" class="" mat-raised-button color="primary" type="submit">
+    Submit
+  </button>
+</mat-card>
 

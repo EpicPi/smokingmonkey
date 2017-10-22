@@ -14,18 +14,15 @@ import {UserStat} from '../../Models/user.stat';
 export class GroupCreateComponent implements OnInit {
   constructor(private router: Router, private userService: UserService, private groupService: GroupService){}
   defaultQuestion = 'Daily';
-
+  name: string;
+  fre: string;
+  money: number;
   ngOnInit() {
   }
 
-  onSubmit(f: NgForm) {
+  submit() {
     console.log('doing it');
-    let name = f.value['name'];
-    let fre = f.value['fre'];
-    let duration = f.value['duration'];
-    let money = f.value['money'];
-
-    const group = new Group(name, fre, duration, money);
+    const group = new Group(this.name, this.money);
 
     group.userStats.push(new UserStat(this.userService.user, 0, group.money));
     this.groupService.addGroup(group);
