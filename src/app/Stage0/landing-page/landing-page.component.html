@@ -1,8 +1,13 @@
 <div>
 	<nav id="header" class = "navbar navbar-default navbar-static-top">
 	    <div class="container-fluid">
+<<<<<<< HEAD
 	        <a class= "navbar-brand" href=# style="color:white"> alt = "QuittingUnited"></a>
 		    	<button type="button" id="testname" class="btn btn-primary navbar-btn navbar-right">{{user.username}}</button>
+=======
+	        <a class= "navbar-brand" href="#" style="color:white"><img src="nosmoking.png" alt = "QuittingUnited"></a>
+		    	<button type="button" id="testname" class="btn btn-primary nav navbar-nav navbar-right">{{user.username}}</button>
+>>>>>>> 10dfc48bb4e68fec28f97d1847ca68edad2f4c26
 	    </div>
 	</nav>
 
@@ -16,10 +21,10 @@
 			</div>
 		</div> <!-- User and group info -->
 
-		<div class="container card col-md-5 col-lg-5 col-xs-5 col-md-5">
-			<ul *ngIf="groups" class="list-group list-group-flush cardh">
-		  	<li *ngFor="let group of groups" class="list-group-item cardh" id="cardh">
-		    	<button class="btn btn-primary cardh " id="specialbutton" (click)="selectGroup(group)">
+		<div class="col-md-offset-5 container-fluid">
+			<ul *ngIf="groups">
+		  	<li *ngFor="let group of groups">
+		    	<button class="btn btn-primary btn-lg" id="specialbutton" (click)="selectGroup(group)">
 		      	{{group.name}}
 		    	</button>
 		  	</li>
