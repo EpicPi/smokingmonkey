@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterContentChecked, AfterViewChecked, AfterViewInit, Component, OnInit} from '@angular/core';
 import {Group} from '../../Models/group';
 import {UserService} from '../../Services/user.service';
 import {GroupService} from '../../Services/group.service';
@@ -11,7 +11,15 @@ import {FirebaseService} from '../../Services/firebase.service';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
 })
-export class LandingPageComponent implements OnInit {
+export class LandingPageComponent implements OnInit, AfterContentChecked {
+
+  ngAfterContentChecked(): void {
+    if (this.groupService.changed) {
+      this.updateGroups();
+      this.groupService.changed = false;
+    }
+  }
+
   user: User;
   groups: Group[];
 
@@ -20,6 +28,11 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit() {
     this.user = this.userService.user;
+    this.groups = new Array<Group>();
+    this.updateGroups();
+  }
+
+  updateGroups() {
     this.groups = new Array<Group>();
     this.fb.getGroups().subscribe(res => {
       const groups = this.groupService.getGroups(res);

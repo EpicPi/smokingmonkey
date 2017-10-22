@@ -31,7 +31,6 @@ export class GroupCreateComponent implements OnInit {
     group.userStats.push(new UserStat(this.userService.user, 0, group.money));
     this.groupService.addGroup(group);
 
-
     this.router.navigateByUrl('/landing');
   }
 }

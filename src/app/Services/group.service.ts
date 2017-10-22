@@ -11,20 +11,15 @@ export class GroupService {
 
   public group: Group;
   public groups: Group[];
+  public changed: boolean;
 
   constructor(private fb: FirebaseService) {
-    // this.groups = new Array<Group>();
-    const group = new Group('s', 1, 1, 1);
-    const usr = new User('jo2', 'lol');
-    group.userStats.push(new UserStat(usr, 0, group.money));
-    this.groups = [group];
-
-    // firbase dat ma boi
+    this.changed = false;
   }
 
   addUser(user: User, group: Group) {
     group.userStats.push(new UserStat(user, 0, group.money));
-    this.setGroup(this.group);
+    this.setGroup(group);
   }
 
   getGroups(result: any) {
@@ -36,14 +31,19 @@ export class GroupService {
   }
 
   setGroup(group: Group) {
-    this.fb.setGroup(group).subscribe(console.log);
+    this.fb.setGroup(group).subscribe(result => {
+      console.log(result);
+      this.changed = true;
+    });
   }
 
   addGroup(group: Group) {
     this.fb.addGroup(group).subscribe(result => {
       group.id = result.json()['name'];
       this.setGroup(group);
+      this.changed = true;
     });
+
   }
 
 }
