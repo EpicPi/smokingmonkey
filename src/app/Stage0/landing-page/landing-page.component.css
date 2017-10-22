@@ -45,6 +45,11 @@ and (max-width: 999px) {
   background-color: #7992a8;
   border-color: #7992a8;
   border-radius: 0%;
+  border: 0px;
+  text-align: center;
+  padding-left: 4px;
+  float: right;
+  width: 13%;
 }
 .card .btn {
   height: 40%;
