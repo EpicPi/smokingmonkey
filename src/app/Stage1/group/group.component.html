@@ -6,15 +6,18 @@
 </nav>
 
 <header>
-	<nav class="navbar navbar-default navbar-left row" role="navigation">
-  		<div class="container-fluid">
-	    	<ul class="nav nav-tabs navbar-left">
-		      <li routerLinkActive="active"><a [routerLink]="['info']">Info</a></li>
-		      <li routerLinkActive="active"><a [routerLink]="['money']">Money</a></li>
-		      <li routerLinkActive="active"><a [routerLink]="['chat']">Chat</a></li>
-	    	</ul>
-		</div>
-	</nav>
+	<div class ="container">
+		<nav class="navbar navbar-default navbar-left" role="navigation">
+	  		<div class="container-fluid">
+		    	<ul class="nav nav-tabs navbar-left">
+			      <li routerLinkActive="active"><a [routerLink]="['info']">Info</a></li>
+			      <li routerLinkActive="active"><a [routerLink]="['money']">Money</a></li>
+			      <li routerLinkActive="active"><a [routerLink]="['chat']">Chat</a></li>
+		    	</ul>
+			</div>
+		</nav>	
+	</div>
+	
 </header>
 <div>
   <router-outlet></router-outlet>

@@ -1,10 +1,12 @@
-<div class="container row">
-	<div *ngFor="let userStat of userStats">
-	  name{{userStat.user.username}}
-	  <br>
-	  money{{userStat.money}}
-	  <br>
-	  penalties{{userStat.penalties}}
-	  <hr>
+<div class="container">
+	<div class="row">
+		<div *ngFor="let userStat of userStats">
+		  name{{userStat.user.username}}
+		  <br>
+		  money{{userStat.money}}
+		  <br>
+		  penalties{{userStat.penalties}}
+		  <hr>
+		</div>
 	</div>
 </div>

@@ -4,3 +4,13 @@
 	border-radius: 0;
 	border: 0;
 }
+
+button {
+	color:black;
+	padding: 3%;
+	font-size: 1em;
+}
+
+ul {
+	list-style-type: none;
+}
