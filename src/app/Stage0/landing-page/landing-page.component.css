@@ -1,26 +1,20 @@
 div{
 	font-size: 1.3em;
 }
+.flo {
 
+}
+@media screen and (max-width: 767px) {
+  .flo {
+    float: left;
+  }
+}
 div .user{
 	text-align: right;
 }
 
-div #makegroup{
-	text-align: right;
-}
 ul{
   list-style-type: none;
-}
-@media only screen
-and (max-width: 999px) {
-  div .user {
-    text-align: left;
-  }
-
-  div #makegroup{
-  	text-align: left;
-  }
 }
 
 #header{
@@ -34,7 +28,7 @@ and (max-width: 999px) {
 	font-size: 1em;
 }
 #group {
-  font-size: .7 em;
+  font-size: 90%;
 }
 .list-group-item {
   padding: 0%;
@@ -46,10 +40,11 @@ and (max-width: 999px) {
   border-color: #7992a8;
   border-radius: 0%;
   border: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
   padding-left: 4px;
-  float: right;
-  width: 13%;
+  /*width: 13%;*/
 }
 .card .btn {
   height: 40%;
@@ -61,7 +56,7 @@ and (max-width: 999px) {
   border-color: lightcoral;
 }
 #testname{
-  float: left;
+  float: right;
   height: 50px;
   border-radius: 0;
   border-bottom-left-radius: 5%;
