@@ -1,5 +1,6 @@
 import {AfterContentChecked, Component, OnInit} from '@angular/core';
 import {UserService} from '../Services/user.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,13 +10,17 @@ import {UserService} from '../Services/user.service';
 export class NavbarComponent implements AfterContentChecked {
   userName: string;
 
-  constructor(private userService: UserService) {
+  constructor(private router: Router, private userService: UserService) {
   }
 
   ngAfterContentChecked() {
     if (!this.userName && this.userService.user) {
       this.userName = this.userService.user.username;
     }
+  }
+  logOut(){
+    this.userService.user = null;
+    this.router.navigateByUrl('/');
   }
 
 }

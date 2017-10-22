@@ -6,4 +6,8 @@
 .small{
   line-height: 36px;
 }
+.right{
+  float: right;
+  color: white;
+}
 
