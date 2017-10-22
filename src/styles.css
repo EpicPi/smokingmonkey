@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 
 body{
-	font-family: "Noto sans", sans-serif;
-	font-size: 2em;
-	color: white;
-	opacity: .9;
-	background-color: rgba(00,00,00,.85);
+	font-family: "Roboto", sans-serif;
+	/*font-size: 2em;*/
+	/*color: white;*/
+	/*opacity: .9;*/
+	/*background-color: rgba(00,00,00,.85);*/
 }
 
 #header{
@@ -13,6 +15,6 @@ body{
 	border-radius: 0;
 }
 
-#testname{
-	color: white;
-}
+/*#testname{*/
+	/*color: white;*/
+/*}*/

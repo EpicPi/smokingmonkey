@@ -1,31 +1,30 @@
-#login {
-	padding: 0%;
-  padding-top: 5%;
-	border: 10px;
-  border-radius: 5%;
-  border-color: white;
-}
-.jumbotron {
-  background: #000000;
-}
-#login div {
-	width: 100%;
-}
-#page{
-  background-blend-mode: soft-light;
-  background-color: black;
-}
-p{
-	text-align: center;
-	font-size: 3em
-}
-#header1{
-	background-color: #333333;
-	border-radius: 0;
-	border: 0;
-}
-#sub {
-  width: 100%;
-  margin-top: 6px;
-}
-
+/*#login {*/
+	/*padding: 0%;*/
+  /*padding-top: 5%;*/
+	/*border: 10px;*/
+  /*border-radius: 5%;*/
+  /*border-color: white;*/
+/*}*/
+/*.jumbotron {*/
+  /*background: #000000;*/
+/*}*/
+/*#login div {*/
+	/*width: 100%;*/
+/*}*/
+/*#page{*/
+  /*background-blend-mode: soft-light;*/
+  /*background-color: black;*/
+/*}*/
+/*p{*/
+	/*text-align: center;*/
+	/*font-size: 3em*/
+/*}*/
+/*#header1{*/
+	/*background-color: #333333;*/
+	/*border-radius: 0;*/
+	/*border: 0;*/
+/*}*/
+/*#sub {*/
+  /*width: 100%;*/
+  /*margin-top: 6px;*/
+/*}*/

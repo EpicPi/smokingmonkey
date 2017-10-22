@@ -18,6 +18,8 @@ import {FormsModule, NgForm, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {UserService} from './Services/user.service';
 import {GroupService} from './Services/group.service';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 
 
 @NgModule({
@@ -39,6 +41,10 @@ import {GroupService} from './Services/group.service';
     ReactiveFormsModule,
     routing,
     HttpModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [
     FirebaseService,
