@@ -3,6 +3,9 @@ import {Router} from '@angular/router';
 import {UserService} from './Services/user.service';
 import {FirebaseService} from './Services/firebase.service';
 import {GroupService} from './Services/group.service';
+import {MatCardModule} from '@angular/material';
+
+
 import 'hammerjs';
 @Component({
   selector: 'app-root',

@@ -20,6 +20,10 @@ import {UserService} from './Services/user.service';
 import {GroupService} from './Services/group.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatSelectModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
+
+
 
 
 @NgModule({
@@ -44,7 +48,9 @@ import {MatButtonModule, MatFormFieldModule, MatInputModule} from '@angular/mate
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule,
+    MatCardModule
   ],
   providers: [
     FirebaseService,
