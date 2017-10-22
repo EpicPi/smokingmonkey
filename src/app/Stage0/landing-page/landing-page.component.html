@@ -1,7 +1,7 @@
 <div>
   <nav id="header" class = "navbar navbar-default navbar-static-top">
     <div class="container-fluid">
-      <a class= "navbar-brand" href=# style="color:white"> alt = "QuittingUnited"></a>
+      <a class= "navbar-brand" href=# style="color:white">QuittersUnited</a>
       <button type="button" id="testname" class="btn btn-primary navbar-btn navbar-right">{{user.username}}</button>
     </div>
   </nav>
@@ -13,8 +13,8 @@
       </div>
     </div> <!-- User and group info -->
     <div class="container card col-md-5 col-lg-5 col-xs-5 col-md-5">
-      <ul *ngIf="groups" class="list-group list-group-flush cardh">
-        <li *ngFor="let group of groups" class="list-group-item cardh" id="cardh">
+      <ul *ngIf="user.groups" class="list-group list-group-flush cardh">
+        <li *ngFor="let group of user.groups" class="list-group-item cardh" id="cardh">
           <button class="btn btn-primary cardh " id="specialbutton" (click)="selectGroup(group)">
             {{group.name}}
           </button>
