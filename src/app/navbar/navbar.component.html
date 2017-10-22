@@ -1,8 +1,8 @@
 <nav id="header1" class="mat-elevation-z6">
   <div class="container-fluid">
-    <a class="mat-button small" mat-button routerLink="/">
+    <a class="mat-button small" mat-button routerLink="/landing">
       <img src="./assets/gg.png" height="36">
     </a>
-    <button *ngIf="userName" type="button" id="testname" class="btn btn-primary navbar-btn navbar-right">{{userName}}</button>
+    <button class="mat-button right" mat-button (click)="logOut()">Logout</button>
   </div>
 </nav>
