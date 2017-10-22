@@ -7,12 +7,5 @@ export class UserService {
 
   constructor() {
   }
-
-
   public user: User;
-
-  addGroup(group: Group) {
-    this.user.groups.push(group);
-    //firebase stuff
-  }
 }
