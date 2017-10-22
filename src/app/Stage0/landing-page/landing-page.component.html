@@ -1,8 +1,8 @@
 <div>
 	<nav id="header" class = "navbar navbar-default navbar-static-top">
 	    <div class="container-fluid">
-	        <a class= "navbar-brand" href="#" style="color:white"><img src="nosmoking.png" alt = "QuittingUnited"></a>
-		    	<button type="button" id="testname" class="btn btn-primary nav navbar-nav navbar-right">{{user.username}}</button> 
+	        <a class= "navbar-brand" href="src/landing-page" style="color:white"><img src="nosmoking.png" alt = "QuittingUnited"></a>
+		    	<button type="button" id="testname" class="btn btn-primary navbar-btn navbar-right">{{user.username}}</button>
 	    </div>
 	</nav>
 
@@ -10,16 +10,16 @@
 
 	<div id="landing-page" class="container-fluid">
 		<div class="container-fluid row info">
-			<div class="col-md-offset-5">
+			<div id="group" class="col-md-5 col-lg-5 col-xs-5 col-md-5">
 				Groups:
 				<br>
 			</div>
 		</div> <!-- User and group info -->
 
-		<div class="col-md-offset-5 container-fluid">
-			<ul *ngIf="user.groups">
-		  	<li *ngFor="let group of user.groups">
-		    	<button class="btn btn-primary btn-lg" id="specialbutton" (click)="selectGroup(group)">
+		<div class="container card col-md-5 col-lg-5 col-xs-5 col-md-5">
+			<ul *ngIf="user.groups" class="list-group list-group-flush cardh">
+		  	<li *ngFor="let group of user.groups" class="list-group-item cardh" id="cardh">
+		    	<button class="btn btn-primary cardh " id="specialbutton" (click)="selectGroup(group)">
 		      	{{group.name}}
 		    	</button>
 		  	</li>
@@ -27,14 +27,14 @@
 			<br>
 		</div>
 
-		<div class="container-fluid button">
+		<div class="container button">
 			<div class="row">
-				<div class="col-md-2 col-md-offset-4" id="makegroup">
+				<div class="col-md-1 col-lg-1 col-xs-1 col-md-1 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1" id="makegroup">
 					<button class="btn btn-primary btn-lg" (click)="makeGroup()">
 				  	Make Group
 					</button>
 				</div>
-				<div class="col-md-2 button clear" >
+				<div class="col-md-1 col-lg-1 col-xs-1 col-md-1 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1 button clear" >
 					<button class="btn btn-primary btn-lg" (click)="joinGroup()">
 				  	Join Group
 					</button>

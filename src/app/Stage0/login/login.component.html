@@ -4,7 +4,7 @@
     </div>
 </nav>
 <div id="page">
-<div class="jumbotron col-lg-7 col-md-6 col-sm-5 col-xs-4">
+<div class="jumbotron col-lg-7 col-md-6 col-sm-5 col-xs-5">
   <div class="container">
     <h1 class="display-3">Quit Smoking Now!</h1>
     <p class="lead">Bet With Your Friends Who Can Last The Longest</p>
@@ -14,7 +14,7 @@
 
 
 
-<div id="login" class="col-md-offset-1 col-md-3 container">
+<div id="login" class="col-xs-offset-1 col-md-3 col-xs-3 col-sm-3">
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
     <label for="userName">UserName</label>
@@ -35,7 +35,7 @@
       value="123">
   </div>
   <button
-    class="btn btn-primary"
+    class="btn btn-primary" id="sub"
     type="submit"
     [disabled]="!myForm.valid">Submit</button>
   </form>
