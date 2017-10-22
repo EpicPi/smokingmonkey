@@ -13,6 +13,7 @@ import {User} from '../../Models/user';
 })
 export class GroupJoinComponent implements OnInit {
   id: string;
+  group: Group;
   groups: Group[];
   user: User;
 
@@ -28,15 +29,19 @@ export class GroupJoinComponent implements OnInit {
 
   join(id: string) {
     if (this.groupByName(id)) {
-      console.log(this.groupByName(id));
-      this.groupService.addUser(this.userService.user, this.groupByName(id));
-      this.router.navigateByUrl('/landing');
+      this.group = this.groupByName(id);
     }
+  }
+
+  accept() {
+    this.groupService.addUser(this.userService.user, this.group);
+    this.router.navigateByUrl('/landing');
+    //nessie logic
   }
 
   groupByName(id: string): Group {
     for (let group of this.groups) {
-      if (group.name === id){
+      if (group.name === id) {
         return group;
       }
     }
