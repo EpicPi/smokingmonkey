@@ -1,8 +1,12 @@
 <div>
   <mat-card>
+    <mat-card-title>
+      Join Group
+    </mat-card-title>
     <mat-form-field>
       <input matInput placeholder="Group Name" #groupID>
     </mat-form-field>
+    <br>
     <button mat-raised-button color="primary" (click)="join(groupID.value)">Join</button>
   </mat-card>
 </div>
