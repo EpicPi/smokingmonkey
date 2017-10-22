@@ -21,25 +21,20 @@ export class LoginComponent implements OnInit {
     '123'
   );
   myForm: FormGroup;
+  userName = 'George Burdell';
+  password = '123';
 
   constructor(private router: Router, private userService: UserService) {
   }
 
   ngOnInit() {
-    this.myForm = new FormGroup({
-      userName: new FormControl(null, Validators.required),
-      password: new FormControl(null, Validators.required)
-    });
-    this.myForm.get('userName').setValue('George Burdell');
-    this.myForm.get('password').setValue('123');
   }
 
   onSubmit() {
     //this stuff should get replaced by firebase
-    if (this.joe.username === this.myForm.value.userName && this.joe.password === this.myForm.value.password) {
+    if (this.joe.username === this.userName && this.joe.password === this.password) {
       this.userService.user = this.joe;
-    }
-    else {
+    } else {
       this.userService.user = this.joe2;
     }
 

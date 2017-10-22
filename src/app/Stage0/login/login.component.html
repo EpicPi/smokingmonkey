@@ -1,41 +1,27 @@
-<nav id="header1" class = "navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-    <a class= "navbar-brand" href="#" style="color:white">QuittingUnited</a>
-    </div>
+<nav id="header1" class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color:white">QuittingUnited</a>
+  </div>
 </nav>
 <div id="page">
-<div class="jumbotron col-lg-7 col-md-6 col-sm-5 col-xs-5">
-  <div class="container">
-    <h1 class="display-3">Quit Smoking Now!</h1>
-    <p class="lead">Bet With Your Friends Who Can Last The Longest</p>
+  <div class="jumbotron col-lg-7 col-md-6 col-sm-5 col-xs-5">
+    <div class="container">
+      <h1 class="display-3">Quit Smoking Now!</h1>
+      <p class="lead">Bet With Your Friends Who Can Last The Longest</p>
+    </div>
   </div>
-</div>
 
 
-
-
-<div id="login" class="col-xs-offset-1 col-md-3 col-xs-3 col-sm-3">
-  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-  <div class="form-group">
-    <label for="userName">UserName</label>
-    <input
-      type="text"
-      id="userName"
-      class="form-control"
-      formControlName="userName">
+  <div id="login" class="col-xs-offset-1 col-md-3 col-xs-3 col-sm-3">
+    <mat-form-field>
+      <input matInput placeholder="User Name" [(ngModel)]="userName">
+      <mat-error>This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" matInput placeholder="Password" [(ngModel)]="password">
+      <mat-error>This field is required</mat-error>
+    </mat-form-field>
+    <br>
+    <button (click)="onSubmit()" mat-raised-button color="primary">Primary</button>
   </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input
-      type="password"
-      id="password"
-      class="form-control"
-      formControlName="password">
-  </div>
-  <button
-    class="btn btn-primary" id="sub"
-    type="submit"
-    [disabled]="!myForm.valid">Submit</button>
-  </form>
-</div>
 </div>

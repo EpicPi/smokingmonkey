@@ -3,8 +3,7 @@ import {Router} from '@angular/router';
 import {UserService} from './Services/user.service';
 import {FirebaseService} from './Services/firebase.service';
 import {GroupService} from './Services/group.service';
-import {Group} from './Models/group';
-
+import 'hammerjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
