@@ -6,7 +6,7 @@
     <mat-card class="info3" *ngFor="let group of groups" (click)="selectGroup(group)">
       <mat-card-title>
           <span>{{group.name}} </span>
-          <span class="right">dummy data</span>
+          <span class="right">{{group.currentAssesment.name}}</span>
       </mat-card-title>
     </mat-card>
   </div>
