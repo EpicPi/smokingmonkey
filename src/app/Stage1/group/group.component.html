@@ -1,2 +1,11 @@
-<app-info></app-info>
+<div class="container-fluid">
 
+    <div *ngFor="let userStat of userStats">
+      name{{userStat.user.username}}
+      <br>
+      money{{userStat.money}}
+      <br>
+      penalties{{userStat.penalties}}
+      <hr>
+    </div>
+</div>
