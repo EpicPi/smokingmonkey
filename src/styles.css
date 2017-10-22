@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 
 body{
@@ -7,7 +7,7 @@ body{
 	/*font-size: 2em;*/
 	/*color: white;*/
 	/*opacity: .9;*/
-	/*background-color: rgba(00,00,00,.85);*/
+	/*background-color:#984b43;*/
 }
 
 #header{

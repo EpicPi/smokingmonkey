@@ -53,7 +53,6 @@ import {
   MatStepperModule,
 } from '@angular/material';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -105,6 +104,9 @@ import {
     MatToolbarModule,
     MatTooltipModule,
     MatStepperModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatCardModule
   ],
   providers: [
     FirebaseService,
