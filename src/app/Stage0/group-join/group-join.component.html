@@ -1,12 +1,17 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-8">
-      Join Group:
-      <mat-form-field>
+<div>
+  <mat-card>
+    <mat-form-field>
       <input matInput placeholder="Group Name" #groupID>
-      <mat-error>This field is required</mat-error>
-      </mat-form-field>
-      <button mat-raised-button color="primary" (click)="join(groupID.value)">Join</button>
-    </div>
-  </div>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="join(groupID.value)">Join</button>
+  </mat-card>
 </div>
+
+<div *ngIf="group">
+  <mat-card>
+    Costs: 5$
+    <br>
+    <button mat-raised-button color="primary" (click)="accept()">Accept</button>
+  </mat-card>
+</div>
+

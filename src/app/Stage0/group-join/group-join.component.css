@@ -1,14 +1,8 @@
-#header{
-  background-color: #778899;
-  background-image: linear-gradient(to left, white, rgba(00,00,00,1));
-  border-radius: 0;
-  border: 0;
-  color: white;
+mat-card{
+  text-align: center;
 }
-#inp {
-  color: black;
-}
-
-button{
-	color: black;
+div{
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
