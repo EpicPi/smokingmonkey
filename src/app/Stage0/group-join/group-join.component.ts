@@ -12,7 +12,7 @@ import {FirebaseService} from '../../Services/firebase.service';
 })
 export class GroupJoinComponent implements OnInit {
   id: string;
-  groups : Group[];
+  groups: Group[];
 
   constructor(private router: Router, private userService: UserService, private groupService: GroupService, private fb: FirebaseService) {
   }
