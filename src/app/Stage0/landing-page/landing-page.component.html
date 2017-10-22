@@ -1,20 +1,19 @@
 <div id="landing-page" class="container-fluid">
   <mat-card class="info">
-    Groups
+    <mat-card-title>
+      Your Groups
+    </mat-card-title>
   </mat-card>
   <div *ngIf="groups" class="info2">
     <mat-card class="info3" *ngFor="let group of groups" (click)="selectGroup(group)">
-      <mat-card-title>
-          <span>{{group.name}} </span>
-          <span class="right">{{group.currentAssesment.name}}</span>
-      </mat-card-title>
+      <span>{{group.name}} </span>
+      <span class="right">{{group.current.name}}</span>
     </mat-card>
   </div>
 
   <hr>
   <div class="text-center">
     <button mat-raised-button color="primary" (click)="makeGroup()">Make Group</button>
-
     <button mat-raised-button color="primary" (click)="joinGroup()">Join Group</button>
   </div>
 
