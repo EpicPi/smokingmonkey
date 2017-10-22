@@ -1,22 +1,2 @@
-<nav mat-tab-nav-bar>
-  <a mat-tab-link
-     [routerLink]="['info']"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
-    Info
-  </a>
-  <a mat-tab-link
-     [routerLink]="['money']"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
-    Money
-  </a>
-  <a mat-tab-link
-     [routerLink]="['chat']"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
-    Chat
-  </a>
-</nav>
-<router-outlet></router-outlet>
+<app-info></app-info>
 
