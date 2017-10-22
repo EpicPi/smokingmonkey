@@ -1,12 +1,16 @@
 <nav id="header" class = "navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-        <a class= "navbar-brand" href="#"> alt = "QuittingUnited"></a>
-	    <button type="button" class="btn btn-primary nav navbar-nav navbar-right" id="testname">{{user.username}}</button>
-    </div>
+  <div class="container-fluid">
+    <a class= "navbar-brand" href="#" style="color:white">QuittingUnited</a>
+  </div>
 </nav>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      Join ID <input type="text" id="inp"#groupID placeholder="id">
 
-Join ID<input type="text" id="inp"#groupID placeholder="id">
-
-<button (click)="join(groupID.value)">
-  Join
-</button>
+      <button class="btn btn-primary"(click)="join(groupID.value)">
+        Join
+      </button>
+    </div>
+  </div>
+</div>
