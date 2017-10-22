@@ -2,8 +2,8 @@ User: {{user.username}}
 <br>
 Groups:
 <br>
-<ul *ngIf="user.groups">
-  <li *ngFor="let group of user.groups">
+<ul *ngIf="groups">
+  <li *ngFor="let group of groups">
     <button (click)="selectGroup(group)">
       {{group.name}}
     </button>
