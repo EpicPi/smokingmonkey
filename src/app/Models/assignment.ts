@@ -1,7 +1,8 @@
 import {Grade} from './grade';
 
 export class Assignment {
-  constructor(public name: string, public grades?: Grade[]) {
+  public grades: Grade[];
+  constructor(public name: string) {
     this.grades = new Array<Grade>();
   }
 }

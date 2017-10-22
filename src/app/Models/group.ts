@@ -10,7 +10,8 @@ export class Group {
   constructor(public name: string, public money: number, public current: Assignment, id?: string) {
     this.userStats = new Array<UserStat>();
     this.id = '';
-    this.assignments = [current];
+    this.assignments = new Array<Assignment>();
+    this.assignments.push(current);
   }
 
 

@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     '123',
   );
   joe2 = new User(
-    'joe joey',
+    'Vandy Man',
     '123'
   );
   myForm: FormGroup;

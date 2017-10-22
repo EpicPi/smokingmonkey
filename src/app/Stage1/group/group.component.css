@@ -1,16 +1,9 @@
-#header{
-	background-color: #778899;
-	background-image: linear-gradient(to left, white, rgba(00,00,00,1));
-	border-radius: 0;
-	border: 0;
+.info{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
 }
+.info2{
 
-.grouptabs{
-	border-radius: 0;
-	border: 0;
-	padding: 0
-}
 
-.grouptabs.active{
-	color:orange;
 }

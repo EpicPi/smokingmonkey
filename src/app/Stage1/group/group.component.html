@@ -1,11 +1,34 @@
 <div class="container-fluid">
-
-    <div *ngFor="let userStat of userStats">
-      name{{userStat.user.username}}
-      <br>
-      money{{userStat.money}}
-      <br>
-      penalties{{userStat.penalties}}
-      <hr>
+  <mat-card class="info">
+    <mat-card-title>Current assesment</mat-card-title>
+    <div *ngIf="!submitted">
+      <mat-form-field>
+        <input matInput type="number" placeholder="Your Grade" [(ngModel)]="yourGrade">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="submit()">Submit</button>
     </div>
+    <div *ngIf="submitted">
+      <mat-form-field>
+        <input matInput type="number" placeholder="Your Grade" [(ngModel)]="yourGrade">
+      </mat-form-field>
+      <button mat-raised-button (click)="update()">Update</button>
+      <br>
+      (We're waiting for your peers to submit their score before ending this assesment)
+      <br>
+      <br>
+      You can add the next assessment here:
+      <br>
+      <mat-form-field>
+        <input matInput type="name" placeholder="Assessment Name" [(ngModel)]="newAssessment">
+      </mat-form-field>
+      <button mat-raised-button color="primary">Submit</button>
+    </div>
+  </mat-card>
+
+  <mat-card class="info">
+    <mat-card-title>
+      Current Money Distribution
+    </mat-card-title>
+    
+  </mat-card>
 </div>
