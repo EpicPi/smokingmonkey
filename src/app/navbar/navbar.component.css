@@ -1,5 +1,9 @@
 #header1{
-  background-color: #558C89;
-  border-radius: 0;
-  border: 0;
+  background: #3f51b5;
+  display: block;
+  overflow: hidden;
+  }
+.small{
+  line-height: 36px;
 }
+

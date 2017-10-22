@@ -1,6 +1,8 @@
-<nav id="header1" class="navbar navbar-default navbar-static-top">
+<nav id="header1" class="mat-elevation-z6">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color:#ECECEA">QuittingUnited</a>
+    <a class="mat-button small" mat-button routerLink="/">
+      <img src="./assets/gg.png" height="36">
+    </a>
     <button *ngIf="userName" type="button" id="testname" class="btn btn-primary navbar-btn navbar-right">{{userName}}</button>
   </div>
 </nav>
