@@ -8,6 +8,9 @@
 .jumbotron {
   background: #D9853B;
 }
+.navbar-right {
+  margin-top: 1.5%;
+}
 /*#login div {*/
 	/*width: 100%;*/
 /*}*/
@@ -23,6 +26,7 @@
 	background-color: #558C89;
 	border-radius: 0;
 	border: 0;
+  margin:0;
 }
 /*#sub {*/
   /*width: 100%;*/
@@ -30,4 +34,5 @@
 /*}*/
 mat-form-field{
   line-height: 1;
+  paddint-bottom: 5px;
 }

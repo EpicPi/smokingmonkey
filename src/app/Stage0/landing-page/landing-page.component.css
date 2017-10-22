@@ -47,7 +47,7 @@ ul{
 }
 #cardh {
   font-size: .65em;
-  background-color: #D9853B;
+  background-color: #4da6ff;
   font-weight: 400;
   border: 2px;
 }
@@ -62,7 +62,7 @@ ul{
   line-height: 4;
   border: 1px;
   border-radius: 0%;
-  background-color: #D9853B;
+  background-color: #4da6ff;
   border-color: lightcoral;
 }
 mat-card {
