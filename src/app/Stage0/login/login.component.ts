@@ -16,6 +16,10 @@ export class LoginComponent implements OnInit {
     'George Burdell',
     '123',
   );
+  joe2 = new User(
+    'joe joey',
+    '123'
+  );
   myForm: FormGroup;
 
   constructor(private router: Router, private userService: UserService) {
@@ -34,8 +38,11 @@ export class LoginComponent implements OnInit {
     //this stuff should get replaced by firebase
     if (this.joe.username === this.myForm.value.userName && this.joe.password === this.myForm.value.password) {
       this.userService.user = this.joe;
-      this.router.navigateByUrl('/landing');
     }
-    this.myForm.reset();
+    else {
+      this.userService.user = this.joe2;
+    }
+
+    this.router.navigateByUrl('/landing');
   }
 }

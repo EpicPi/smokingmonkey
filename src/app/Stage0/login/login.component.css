@@ -1,8 +1,9 @@
 #login {
-	padding: 2%;
+	padding: 0%;
   padding-top: 5%;
-	border: 2px;
+	border: 10px;
   border-radius: 5%;
+  border-color: white;
 }
 .jumbotron {
   background: #000000;
@@ -23,3 +24,8 @@ p{
 	border-radius: 0;
 	border: 0;
 }
+#sub {
+  width: 100%;
+  margin-top: 6px;
+}
+

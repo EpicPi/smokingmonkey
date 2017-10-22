@@ -1,8 +1,13 @@
 <div>
 	<nav id="header" class = "navbar navbar-default navbar-static-top">
 	    <div class="container-fluid">
+<<<<<<< HEAD
 	        <a class= "navbar-brand" href="#" style="color:white"><img src="nosmoking.png" alt = "QuittingUnited"></a>
 		    	<button type="button" id="testname" class="btn btn-primary nav navbar-nav navbar-right">{{user.username}}</button>
+=======
+	        <a class= "navbar-brand" href=# style="color:white"> alt = "QuittingUnited"></a>
+		    	<button type="button" id="testname" class="btn btn-primary navbar-btn navbar-right">{{user.username}}</button>
+>>>>>>> 15a8902c4ab96f83b21a65a14015369ff48e4d2d
 	    </div>
 	</nav>
 
@@ -10,7 +15,7 @@
 
 	<div id="landing-page" class="container-fluid">
 		<div class="container-fluid row info">
-			<div class="col-md-offset-5">
+			<div id="group" class="col-md-5 col-lg-5 col-xs-5 col-md-5">
 				Groups:
 				<br>
 			</div>
@@ -27,14 +32,14 @@
 			<br>
 		</div>
 
-		<div class="container-fluid button">
+		<div class="container button">
 			<div class="row">
-				<div class="col-md-2 col-md-offset-4" id="makegroup">
+				<div class="col-md-1 col-lg-1 col-xs-1 col-md-1 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1" id="makegroup">
 					<button class="btn btn-primary btn-lg" (click)="makeGroup()">
 				  	Make Group
 					</button>
 				</div>
-				<div class="col-md-2 button clear" >
+				<div class="col-md-1 col-lg-1 col-xs-1 col-md-1 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1 button clear" >
 					<button class="btn btn-primary btn-lg" (click)="joinGroup()">
 				  	Join Group
 					</button>
